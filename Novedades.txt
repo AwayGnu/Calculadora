@@ -18,3 +18,13 @@ Cambie el Icono de la app de la Splash Screen
 Error al escribir decimales sin entero
 
 ==================================================
+==================================================
+Version 1.04
+//Soluciones
+1.
+Agregue mas espacio a los botones y les quite el margen de color
+
+//Pendiente
+Error al escribir decimales sin entero
+
+==================================================
