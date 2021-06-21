@@ -1,0 +1,20 @@
+==================================================
+Version 1.03
+//Soluciones
+1.
+Cuando el resultado era entero lo convertia automaticamente a decimal aun que no lo fuera, por ejemplo
+
+Version 1.02: 3 + 3 = 3.0
+Version 1.03: 3 + 3 = 3
+
+Ahora ya muestra bien el resutlado
+
+2.
+Cambie Color del fondo de las Screen de #2B2B2B a #252525
+Cambie color de Margen de los botones de #434343 a #707070
+Cambie el Icono de la app de la Splash Screen
+
+//Pendiente
+Error al escribir decimales sin entero
+
+==================================================
