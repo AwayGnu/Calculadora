@@ -162,30 +162,36 @@ class MainActivity : AppCompatActivity() {
         tvResultado!!.text = "0"
     }
 
-    fun MostrarResultado(view: View?) {
-        numero2 = tvResultado!!.text.toString().toFloat()
-        var result = 0.0f
-        if (operacion == "%") {
-            result = numero1 / 100.0f * numero2
-        }
-        if (operacion == "/") {
-            if (numero2 != 0.0f) {
-                result = numero1 / numero2
-            } else {
-                result = 0.0f
-                Toast.makeText(this, "OPERACION NO VALIDA", Toast.LENGTH_LONG).show()
-            }
-        } else if (operacion == "*") {
-            result = numero1 * numero2
-        } else if (operacion == "-") {
-            result = numero1 - numero2
-        } else if (operacion == "+") {
-            result = numero1 + numero2
-        }
-        tvResultado!!.text = if("$result".endsWith(".0")) { "$result".replace(".0","") } else { (result).toString() } //Quita el cero sobrante de los decimales /Agregado en Version 1.03
-        numero1 = 0.0f
-        numero2 = 0.0f
-        operacion = ""
-    }
 
+    fun MostrarResultado(view: View?) {
+            numero2 = tvResultado!!.text.toString().toFloat()
+            var result = 0.0f
+            if (operacion == "%") {
+                result = numero1 / 100.0f * numero2
+            }
+            if (operacion == "/") {
+                if (numero2 != 0.0f) {
+                    result = numero1 / numero2
+                } else {
+                    result = 0.0f
+                    Toast.makeText(this, "Operacion no valida", Toast.LENGTH_LONG).show()
+                }
+            } else if (operacion == "*") {
+                result = numero1 * numero2
+            } else if (operacion == "-") {
+                result = numero1 - numero2
+            } else if (operacion == "+") {
+                result = numero1 + numero2
+            }
+
+            tvResultado!!.text = if ("$result".endsWith(".0")) {
+                "$result".replace(".0", "")
+            } else {
+                (result).toString()
+            } //Quita el cero sobrante de los decimales /Agregado en Version 1.03
+            numero1 = 0.0f
+            numero2 = 0.0f
+            operacion = ""
+
+    }
 }
