@@ -101,7 +101,7 @@
         android:maxLength="26"
         android:text="0"
         android:textColor="@android:color/white"
-        android:textSize="30dp"
+        android:textSize="35dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline202"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
@@ -109,326 +109,213 @@
 
     <Button
         android:id="@+id/btAC"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="LimpiarResultado"
         android:text="AC"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline203"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
         app:layout_constraintTop_toTopOf="@+id/guideline202"
         app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        />
 
     <Button
         android:id="@+id/btCambioSigno"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="CambioSigno"
         android:text="+/-"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline203"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
         app:layout_constraintTop_toTopOf="@+id/guideline202"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btPorcentaje"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="OperacionPorcentaje"
         android:text="%"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline203"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline202"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btDivision"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="OperacionDividir"
         android:text="/"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline203"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
         app:layout_constraintTop_toTopOf="@+id/guideline202"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btSiete"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirSiete"
         android:text="7"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
         app:layout_constraintTop_toBottomOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btOcho"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirOcho"
         android:text="8"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
         app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btNueve"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirNueve"
         android:text="9"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btMulti"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="OperacionMulti"
         android:text="X"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
         app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white" />
 
     <Button
         android:id="@+id/btCuatro"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirCuatro"
         android:text="4"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
         app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btCinco"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirCinco"
         android:text="5"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
         app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btSeis"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirSeis"
         android:text="6"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btMenos"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="OperacionMenos"
         android:text="-"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
         app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white" />
 
     <Button
         android:id="@+id/btUno"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirUno"
         android:text="1"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
         app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btDos"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirDos"
         android:text="2"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
         app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btTres"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirTres"
         android:text="3"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btMas"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="OperacionMas"
         android:text="+"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
         app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btCero"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirCero"
         android:text="0"
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
         app:layout_constraintTop_toTopOf="@+id/guideline206"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btPunto"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="EscribirPunto"
         android:text="."
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
         app:layout_constraintTop_toTopOf="@+id/guideline206"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btIgual"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
+        style="@style/ButtonV1"
         android:onClick="MostrarResultado"
         android:text="="
-        android:textColor="@android:color/white"
-        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
         app:layout_constraintTop_toTopOf="@+id/guideline206"
-        app:rippleColor="@android:color/white"
-        app:strokeColor="@color/strokeBt" />
+        app:rippleColor="@android:color/white"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
