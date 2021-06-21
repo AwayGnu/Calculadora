@@ -31,4 +31,17 @@
         <!--<item name="android:background">?android:attr/selectableItemBackground</item> -->
     </style>
 
+    <style name="ButtonV2">
+        <item name="android:textSize">30dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@null</item> <!-- Quita el fondo de los botones -->
+        <item name="android:stateListAnimator">@null</item> <!-- Quita el borde forzado de los Botones -->
+        <!--<item name="android:background">?android:attr/selectableItemBackground</item> -->
+    </style>
+
 </resources>

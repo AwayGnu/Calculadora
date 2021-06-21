@@ -28,3 +28,13 @@ Agregue mas espacio a los botones y les quite el margen de color
 Error al escribir decimales sin entero
 
 ==================================================
+==================================================
+Version 1.04.3
+//Soluciones
+1.
+Agregue un land para que se adapte a pantallas horizontales
+
+//Pendiente
+Error al escribir decimales sin entero
+
+==================================================
