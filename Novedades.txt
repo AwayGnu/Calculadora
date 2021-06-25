@@ -38,3 +38,16 @@ Agregue un land para que se adapte a pantallas horizontales
 Error al escribir decimales sin entero
 
 ==================================================
+==================================================
+Version 1.05.0
+//Soluciones
+1.
+Modifique el codigo del Main, ahora ya no da errores o te saca de la aplicacion cuando introduces operaciones incorrectas.
+
+2.
+Agregue otro TextView para el resultado
+
+//Pendiente
+Corregir el orden de los botones del modo horizontal
+
+==================================================

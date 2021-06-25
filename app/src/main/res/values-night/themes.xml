@@ -19,7 +19,7 @@
     </style>
 
     <style name="ButtonV1">
-        <item name="android:textSize">20dp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_margin">0dp</item>
@@ -29,6 +29,30 @@
         <item name="android:backgroundTint">@null</item> <!-- Quita el fondo de los botones -->
         <item name="android:stateListAnimator">@null</item> <!-- Quita el borde forzado de los Botones -->
         <!--<item name="android:background">?android:attr/selectableItemBackground</item> -->
+    </style>
+
+    <style name="ButtonV2">
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:backgroundTint">@null</item> <!-- Quita el fondo de los botones -->
+        <item name="android:stateListAnimator">@null</item> <!-- Quita el borde forzado de los Botones -->
+        <!--<item name="android:background">?android:attr/selectableItemBackground</item> -->
+    </style>
+
+    <style name="TextViewV1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@color/background</item>
+        <item name="android:gravity">right|center_vertical</item>
+        <item name="android:maxLength">15</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">24sp</item>
     </style>
 
 </resources>

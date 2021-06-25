@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background">#252525</color> <!-- Color para el fondo de la Screen -->
     <color name="strokeBt"></color> <!-- Color para el margen de los botones -->
+    <color name="green">#4ea043</color>
+    <color name="red">#d14f4f</color>
 </resources>

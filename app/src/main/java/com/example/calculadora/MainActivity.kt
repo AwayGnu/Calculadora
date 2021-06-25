@@ -1,18 +1,15 @@
 package com.example.calculadora
 
 import android.os.Bundle
-import android.view.View
 import android.view.Window
-import android.widget.TextView
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
+import kotlinx.android.synthetic.main.activity_main.*
+import java.text.DecimalFormat
+import org.mariuszgromada.math.mxparser.Expression
 
 
 class MainActivity : AppCompatActivity() {
-    var tvResultado: TextView? = null
-    var numero1 = 0.0f
-    var numero2 = 0.0f
-    var operacion = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -20,178 +17,98 @@ class MainActivity : AppCompatActivity() {
         supportRequestWindowFeature(Window.FEATURE_NO_TITLE)
         setContentView(R.layout.activity_main)
 
-        tvResultado = findViewById(R.id.tvResultado);
-
-    }
-
-    fun EscribirCero(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "0"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "0"
+        btAC.setOnClickListener {
+            input.text = ""
+            output.text = ""
         }
-    }
 
-    fun EscribirUno(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "1"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "1"
+        btLeft.setOnClickListener {
+            input.text = addToInputText("(")
         }
-    }
-
-    fun EscribirDos(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "2"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "2"
+        btRight.setOnClickListener {
+            input.text = addToInputText(")")
         }
-    }
-
-    fun EscribirTres(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "3"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "3"
+        btCero.setOnClickListener {
+            input.text = addToInputText("0")
         }
-    }
-
-    fun EscribirCuatro(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "4"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "4"
+        btUno.setOnClickListener {
+            input.text = addToInputText("1")
         }
-    }
-
-    fun EscribirCinco(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "5"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "5"
+        btDos.setOnClickListener {
+            input.text = addToInputText("2")
         }
-    }
-
-    fun EscribirSeis(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "6"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "6"
+        btTres.setOnClickListener {
+            input.text = addToInputText("3")
         }
-    }
-
-    fun EscribirSiete(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "7"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "7"
+        btCuatro.setOnClickListener {
+            input.text = addToInputText("4")
         }
-    }
-
-    fun EscribirOcho(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "8"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "8"
+        btCinco.setOnClickListener {
+            input.text = addToInputText("5")
         }
-    }
-
-    fun EscribirNueve(view: View?) {
-        val valor = tvResultado!!.text.toString().toFloat()
-        if (valor == 0.0f) {
-            tvResultado!!.text = "9"
-        } else {
-            tvResultado!!.text = tvResultado!!.text.toString() + "9"
+        btSeis.setOnClickListener {
+            input.text = addToInputText("6")
         }
+        btSiete.setOnClickListener {
+            input.text = addToInputText("7")
+        }
+        btOcho.setOnClickListener {
+            input.text = addToInputText("8")
+        }
+        btNueve.setOnClickListener {
+            input.text = addToInputText("9")
+        }
+        btPunto.setOnClickListener {
+            input.text = addToInputText(".")
+        }
+        btDivision.setOnClickListener {
+            input.text = addToInputText("÷") // ALT + 0247
+        }
+        btMulti.setOnClickListener {
+            input.text = addToInputText("×") // ALT + 0215
+        }
+        btMenos.setOnClickListener {
+            input.text = addToInputText("-")
+        }
+        btMas.setOnClickListener {
+            input.text = addToInputText("+")
+        }
+
+        btIgual.setOnClickListener {
+            showResult()
+        }
+
     }
 
-    fun EscribirPunto(view: View?) {
-        tvResultado!!.text = tvResultado!!.text.toString() + "."
-
+    private fun addToInputText(buttonValue: String): String {
+        return "${input.text}$buttonValue"
     }
 
-    fun LimpiarResultado(view: View?) {
-        numero1 = 0.0f
-        numero2 = 0.0f
-        operacion = ""
-        tvResultado!!.text = "0"
+    private fun getInputExpression(): String {
+        var expression = input.text.replace(Regex("÷"), "/")
+        expression = expression.replace(Regex("×"), "*")
+        return expression
     }
 
-    fun CambioSigno(view: View?) {
-        var valor = tvResultado!!.text.toString().toFloat()
-        valor *= -1.0f
-        tvResultado!!.text = "" + if("$valor".endsWith(".0")) { "$valor".replace(".0","") } else { (valor).toString() } //Quita el cero sobrante de los decimales //Agregado en Version 1.03
-    }
-
-    fun OperacionPorcentaje(view: View?) {
-        numero1 = tvResultado!!.text.toString().toFloat()
-        operacion = "%"
-        tvResultado!!.text = "0"
-    }
-
-    fun OperacionDividir(view: View?) {
-        numero1 = tvResultado!!.text.toString().toFloat()
-        operacion = "/"
-        tvResultado!!.text = "0"
-    }
-
-    fun OperacionMulti(view: View?) {
-        numero1 = tvResultado!!.text.toString().toFloat()
-        operacion = "*"
-        tvResultado!!.text = "0"
-    }
-
-    fun OperacionMenos(view: View?) {
-        numero1 = tvResultado!!.text.toString().toFloat()
-        operacion = "-"
-        tvResultado!!.text = "0"
-    }
-
-    fun OperacionMas(view: View?) {
-        numero1 = tvResultado!!.text.toString().toFloat()
-        operacion = "+"
-        tvResultado!!.text = "0"
-    }
-
-
-    fun MostrarResultado(view: View?) {
-            numero2 = tvResultado!!.text.toString().toFloat()
-            var result = 0.0f
-            if (operacion == "%") {
-                result = numero1 / 100.0f * numero2
-            }
-            if (operacion == "/") {
-                if (numero2 != 0.0f) {
-                    result = numero1 / numero2
-                } else {
-                    result = 0.0f
-                    Toast.makeText(this, "Operacion no valida", Toast.LENGTH_LONG).show()
-                }
-            } else if (operacion == "*") {
-                result = numero1 * numero2
-            } else if (operacion == "-") {
-                result = numero1 - numero2
-            } else if (operacion == "+") {
-                result = numero1 + numero2
-            }
-
-            tvResultado!!.text = if ("$result".endsWith(".0")) {
-                "$result".replace(".0", "")
+    private fun showResult() {
+        try {
+            val expression = getInputExpression()
+            val result = Expression(expression).calculate()
+            if (result.isNaN()) {
+                // Show Error Message
+                output.text = "Error"
+                output.setTextColor(ContextCompat.getColor(this, R.color.red))
             } else {
-                (result).toString()
-            } //Quita el cero sobrante de los decimales /Agregado en Version 1.03
-            numero1 = 0.0f
-            numero2 = 0.0f
-            operacion = ""
-
+                // Show Result
+                output.text = DecimalFormat("0.######").format(result).toString()
+                output.setTextColor(ContextCompat.getColor(this, R.color.green))
+            }
+        } catch (e: Exception) {
+            // Show Error Message
+            output.text = "Error"
+            output.setTextColor(ContextCompat.getColor(this, R.color.red))
+        }
     }
+
+
 }

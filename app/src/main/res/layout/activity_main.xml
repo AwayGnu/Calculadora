@@ -54,267 +54,255 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.18" />
+        app:layout_constraintGuide_percent="0.15714286" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline203"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.34" />
+        app:layout_constraintGuide_percent="0.29428572" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline204"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.50" />
+        app:layout_constraintGuide_percent="0.43142857" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline205"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.66" />
+        app:layout_constraintGuide_percent="0.56857143" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline206"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.82" />
+        app:layout_constraintGuide_percent="0.7057143" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline207"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".8428571" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline208"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
         app:layout_constraintGuide_percent=".98" />
 
     <TextView
-        android:id="@+id/tvResultado"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_margin="5dp"
-        android:background="@color/background"
-        android:gravity="right|center_vertical"
-        android:maxLength="26"
-        android:text="0"
-        android:textColor="@android:color/white"
-        android:textSize="35dp"
+        android:id="@+id/input"
+        style="@style/TextViewV1"
         app:layout_constraintBottom_toTopOf="@+id/guideline202"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
-        app:layout_constraintStart_toStartOf="@+id/guideline102"
+        app:layout_constraintStart_toStartOf="@+id/guideline101"
         app:layout_constraintTop_toTopOf="@+id/guideline201" />
+
+    <TextView
+        android:id="@+id/output"
+        style="@style/TextViewV1"
+        app:layout_constraintBottom_toTopOf="@+id/guideline203"
+        app:layout_constraintEnd_toStartOf="@+id/guideline105"
+        app:layout_constraintStart_toStartOf="@+id/guideline101"
+        app:layout_constraintTop_toTopOf="@+id/guideline202" />
 
     <Button
         android:id="@+id/btAC"
         style="@style/ButtonV1"
-        android:onClick="LimpiarResultado"
         android:text="AC"
-        app:layout_constraintBottom_toTopOf="@+id/guideline203"
+        app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline202"
+        app:layout_constraintTop_toTopOf="@+id/guideline203"
         app:rippleColor="@android:color/white"
         />
 
     <Button
-        android:id="@+id/btCambioSigno"
+        android:id="@+id/btLeft"
         style="@style/ButtonV1"
-        android:onClick="CambioSigno"
-        android:text="+/-"
-        app:layout_constraintBottom_toTopOf="@+id/guideline203"
+        android:text="("
+        app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline202"
+        app:layout_constraintTop_toTopOf="@+id/guideline203"
         app:rippleColor="@android:color/white"/>
 
     <Button
-        android:id="@+id/btPorcentaje"
+        android:id="@+id/btRight"
         style="@style/ButtonV1"
-        android:onClick="OperacionPorcentaje"
-        android:text="%"
-        app:layout_constraintBottom_toTopOf="@+id/guideline203"
+        android:text=")"
+        app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline202"
+        app:layout_constraintTop_toTopOf="@+id/guideline203"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btDivision"
         style="@style/ButtonV1"
-        android:onClick="OperacionDividir"
         android:text="/"
-        app:layout_constraintBottom_toTopOf="@+id/guideline203"
+        app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline202"
+        app:layout_constraintTop_toTopOf="@+id/guideline203"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btSiete"
         style="@style/ButtonV1"
-        android:onClick="EscribirSiete"
         android:text="7"
-        app:layout_constraintBottom_toTopOf="@+id/guideline204"
+        app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toBottomOf="@+id/guideline203"
+        app:layout_constraintTop_toBottomOf="@+id/guideline204"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btOcho"
         style="@style/ButtonV1"
-        android:onClick="EscribirOcho"
         android:text="8"
-        app:layout_constraintBottom_toTopOf="@+id/guideline204"
+        app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
+        app:layout_constraintTop_toTopOf="@+id/guideline204"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btNueve"
         style="@style/ButtonV1"
-        android:onClick="EscribirNueve"
         android:text="9"
-        app:layout_constraintBottom_toTopOf="@+id/guideline204"
+        app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
+        app:layout_constraintTop_toTopOf="@+id/guideline204"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btMulti"
         style="@style/ButtonV1"
-        android:onClick="OperacionMulti"
         android:text="X"
-        app:layout_constraintBottom_toTopOf="@+id/guideline204"
+        app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
+        app:layout_constraintTop_toTopOf="@+id/guideline204"
         app:rippleColor="@android:color/white" />
 
     <Button
         android:id="@+id/btCuatro"
         style="@style/ButtonV1"
-        android:onClick="EscribirCuatro"
         android:text="4"
-        app:layout_constraintBottom_toTopOf="@+id/guideline205"
+        app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
+        app:layout_constraintTop_toTopOf="@+id/guideline205"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btCinco"
         style="@style/ButtonV1"
-        android:onClick="EscribirCinco"
         android:text="5"
-        app:layout_constraintBottom_toTopOf="@+id/guideline205"
+        app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
+        app:layout_constraintTop_toTopOf="@+id/guideline205"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btSeis"
         style="@style/ButtonV1"
-        android:onClick="EscribirSeis"
         android:text="6"
-        app:layout_constraintBottom_toTopOf="@+id/guideline205"
+        app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
+        app:layout_constraintTop_toTopOf="@+id/guideline205"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btMenos"
         style="@style/ButtonV1"
-        android:onClick="OperacionMenos"
         android:text="-"
-        app:layout_constraintBottom_toTopOf="@+id/guideline205"
+        app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
+        app:layout_constraintTop_toTopOf="@+id/guideline205"
         app:rippleColor="@android:color/white" />
 
     <Button
         android:id="@+id/btUno"
         style="@style/ButtonV1"
-        android:onClick="EscribirUno"
         android:text="1"
-        app:layout_constraintBottom_toTopOf="@+id/guideline206"
+        app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
+        app:layout_constraintTop_toTopOf="@+id/guideline206"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btDos"
         style="@style/ButtonV1"
-        android:onClick="EscribirDos"
         android:text="2"
-        app:layout_constraintBottom_toTopOf="@+id/guideline206"
+        app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
+        app:layout_constraintTop_toTopOf="@+id/guideline206"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btTres"
         style="@style/ButtonV1"
-        android:onClick="EscribirTres"
         android:text="3"
-        app:layout_constraintBottom_toTopOf="@+id/guideline206"
+        app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
+        app:layout_constraintTop_toTopOf="@+id/guideline206"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btMas"
         style="@style/ButtonV1"
-        android:onClick="OperacionMas"
         android:text="+"
-        app:layout_constraintBottom_toTopOf="@+id/guideline206"
+        app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
+        app:layout_constraintTop_toTopOf="@+id/guideline206"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btCero"
         style="@style/ButtonV1"
-        android:onClick="EscribirCero"
         android:text="0"
-        app:layout_constraintBottom_toTopOf="@+id/guideline207"
-        app:layout_constraintEnd_toStartOf="@+id/guideline103"
+        app:layout_constraintBottom_toTopOf="@+id/guideline208"
+        app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
+        app:layout_constraintTop_toTopOf="@+id/guideline207"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btPunto"
         style="@style/ButtonV1"
-        android:onClick="EscribirPunto"
         android:text="."
-        app:layout_constraintBottom_toTopOf="@+id/guideline207"
-        app:layout_constraintEnd_toStartOf="@+id/guideline104"
-        app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
+        app:layout_constraintBottom_toTopOf="@+id/guideline208"
+        app:layout_constraintEnd_toStartOf="@+id/guideline103"
+        app:layout_constraintStart_toStartOf="@+id/guideline102"
+        app:layout_constraintTop_toTopOf="@+id/guideline207"
         app:rippleColor="@android:color/white"/>
 
     <Button
         android:id="@+id/btIgual"
         style="@style/ButtonV1"
-        android:onClick="MostrarResultado"
         android:text="="
-        app:layout_constraintBottom_toTopOf="@+id/guideline207"
+        app:layout_constraintBottom_toTopOf="@+id/guideline208"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
-        app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
+        app:layout_constraintStart_toStartOf="@+id/guideline103"
+        app:layout_constraintTop_toTopOf="@+id/guideline207"
         app:rippleColor="@android:color/white"/>
 
 
