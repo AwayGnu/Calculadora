@@ -51,3 +51,12 @@ Agregue otro TextView para el resultado
 Corregir el orden de los botones del modo horizontal
 
 ==================================================
+==================================================
+Version 1.05.1
+//Soluciones
+1.
+Cambie el nombre de la App a Calculator
+
+//Pendiente
+
+==================================================
