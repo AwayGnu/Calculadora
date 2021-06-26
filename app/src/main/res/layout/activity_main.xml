@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     tools:context=".MainActivity">
     <!-- Guia Visual -->
     <androidx.constraintlayout.widget.Guideline
@@ -121,9 +120,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"
-        />
+        app:layout_constraintTop_toTopOf="@+id/guideline203" />
 
     <Button
         android:id="@+id/btLeft"
@@ -132,8 +129,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline203" />
 
     <Button
         android:id="@+id/btRight"
@@ -142,8 +138,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline203"/>
 
     <Button
         android:id="@+id/btDivision"
@@ -152,8 +147,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline203"/>
 
     <Button
         android:id="@+id/btSiete"
@@ -162,8 +156,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toBottomOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toBottomOf="@+id/guideline204"/>
 
     <Button
         android:id="@+id/btOcho"
@@ -172,8 +165,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline204"/>
 
     <Button
         android:id="@+id/btNueve"
@@ -182,8 +174,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline204"/>
 
     <Button
         android:id="@+id/btMulti"
@@ -192,8 +183,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white" />
+        app:layout_constraintTop_toTopOf="@+id/guideline204"/>
 
     <Button
         android:id="@+id/btCuatro"
@@ -202,8 +192,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline205"/>
 
     <Button
         android:id="@+id/btCinco"
@@ -212,8 +201,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline205"/>
 
     <Button
         android:id="@+id/btSeis"
@@ -222,8 +210,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline205"/>
 
     <Button
         android:id="@+id/btMenos"
@@ -232,8 +219,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white" />
+        app:layout_constraintTop_toTopOf="@+id/guideline205"/>
 
     <Button
         android:id="@+id/btUno"
@@ -242,8 +228,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline206"/>
 
     <Button
         android:id="@+id/btDos"
@@ -252,8 +237,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline206"/>
 
     <Button
         android:id="@+id/btTres"
@@ -262,8 +246,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline206"/>
 
     <Button
         android:id="@+id/btMas"
@@ -272,8 +255,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline207"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline206"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline206"/>
 
     <Button
         android:id="@+id/btCero"
@@ -282,8 +264,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline208"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline207"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline207"/>
 
     <Button
         android:id="@+id/btPunto"
@@ -292,8 +273,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline208"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline207"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline207"/>
 
     <Button
         android:id="@+id/btIgual"
@@ -302,8 +282,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline208"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline207"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline207"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

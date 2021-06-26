@@ -1,17 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Theme.Calculadora" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorPrimary">#252525</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+        <item name="android:background">@color/background</item>
     </style>
 
     <style name="SplashTheme" parent="Theme.Calculadora">
@@ -19,40 +9,29 @@
     </style>
 
     <style name="ButtonV1">
-        <item name="android:textSize">24sp</item>
+        <item name="android:textSize">30sp</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
+        <item name="rippleColor">#E4E4E4</item>
         <item name="android:layout_margin">0dp</item>
         <item name="android:insetTop">0dp</item>
         <item name="android:insetBottom">0dp</item>
         <item name="android:textColor">@color/white</item>
-        <item name="android:backgroundTint">@null</item> <!-- Quita el fondo de los botones -->
-        <item name="android:stateListAnimator">@null</item> <!-- Quita el borde forzado de los Botones -->
-        <!--<item name="android:background">?android:attr/selectableItemBackground</item> -->
-    </style>
-
-    <style name="ButtonV2">
-        <item name="android:textSize">24sp</item>
-        <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">0dp</item>
-        <item name="android:layout_margin">0dp</item>
-        <item name="android:insetTop">0dp</item>
-        <item name="android:insetBottom">0dp</item>
-        <item name="android:textColor">@color/white</item>
-        <item name="android:backgroundTint">@null</item> <!-- Quita el fondo de los botones -->
+        <item name="android:backgroundTint">@color/background</item> <!-- Quita el fondo de los botones -->
         <item name="android:stateListAnimator">@null</item> <!-- Quita el borde forzado de los Botones -->
         <!--<item name="android:background">?android:attr/selectableItemBackground</item> -->
     </style>
 
     <style name="TextViewV1">
+        <item name="android:textIsSelectable">true</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_margin">5dp</item>
         <item name="android:background">@color/background</item>
         <item name="android:gravity">right|center_vertical</item>
         <item name="android:maxLength">15</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">30sp</item>
     </style>
 
 </resources>

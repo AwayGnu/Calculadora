@@ -60,3 +60,12 @@ Cambie el nombre de la App a Calculator
 //Pendiente
 
 ==================================================
+==================================================
+Version 1.05.2
+//Soluciones
+1.
+Arregle el modo DarkMode, ahora ya cuenta con el modo LightMode y DarkMode
+
+//Pendiente
+
+==================================================

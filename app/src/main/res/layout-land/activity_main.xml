@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
     tools:context=".MainActivity">
     <!-- Guia Visual -->
     <androidx.constraintlayout.widget.Guideline
@@ -98,7 +97,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.98" />
+        app:layout_constraintGuide_percent="0.98"/>
 
     <TextView
         android:id="@+id/input"
@@ -106,7 +105,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline202"
         app:layout_constraintEnd_toStartOf="@+id/guideline107"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline201" />
+        app:layout_constraintTop_toTopOf="@+id/guideline201"/>
 
     <TextView
         android:id="@+id/output"
@@ -114,198 +113,178 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline203"
         app:layout_constraintEnd_toStartOf="@+id/guideline107"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline202" />
+        app:layout_constraintTop_toTopOf="@+id/guideline202"/>
 
     <Button
         android:id="@+id/btAC"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="AC"
         app:layout_constraintBottom_toTopOf="@+id/guideline203"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline202"
-        app:rippleColor="@android:color/white"
-        />
+        app:layout_constraintTop_toTopOf="@+id/guideline202"/>
 
     <Button
         android:id="@+id/btLeft"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="("
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline203"/>
 
     <Button
         android:id="@+id/btRight"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text=")"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline203"/>
 
     <Button
         android:id="@+id/btDivision"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="/"
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline204"/>
 
     <Button
         android:id="@+id/btSiete"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="7"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline203"/>
 
     <Button
         android:id="@+id/btOcho"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="8"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline106"
         app:layout_constraintStart_toStartOf="@+id/guideline105"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline203"/>
 
     <Button
         android:id="@+id/btNueve"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="9"
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline107"
         app:layout_constraintStart_toStartOf="@+id/guideline106"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline203"/>
 
     <Button
         android:id="@+id/btMulti"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="X"
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white" />
+        app:layout_constraintTop_toTopOf="@+id/guideline204" />
 
     <Button
         android:id="@+id/btCuatro"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="4"
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline204"/>
 
     <Button
         android:id="@+id/btCinco"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="5"
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline106"
         app:layout_constraintStart_toStartOf="@+id/guideline105"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline204"/>
 
     <Button
         android:id="@+id/btSeis"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="6"
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline107"
         app:layout_constraintStart_toStartOf="@+id/guideline106"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline204"/>
 
     <Button
         android:id="@+id/btMenos"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="-"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline102"
         app:layout_constraintStart_toStartOf="@+id/guideline101"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white" />
+        app:layout_constraintTop_toTopOf="@+id/guideline205" />
 
     <Button
         android:id="@+id/btUno"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="1"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline105"
         app:layout_constraintStart_toStartOf="@+id/guideline104"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline205"/>
 
     <Button
         android:id="@+id/btDos"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="2"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline106"
         app:layout_constraintStart_toStartOf="@+id/guideline105"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline205"/>
 
     <Button
         android:id="@+id/btTres"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="3"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline107"
         app:layout_constraintStart_toStartOf="@+id/guideline106"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline205"/>
 
     <Button
         android:id="@+id/btMas"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="+"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline103"
         app:layout_constraintStart_toStartOf="@+id/guideline102"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline205"/>
 
     <Button
         android:id="@+id/btCero"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="0"
         app:layout_constraintBottom_toTopOf="@+id/guideline206"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline205"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline205"/>
 
     <Button
         android:id="@+id/btPunto"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="."
         app:layout_constraintBottom_toTopOf="@+id/guideline204"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline203"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline203"/>
 
     <Button
         android:id="@+id/btIgual"
-        style="@style/ButtonV2"
+        style="@style/ButtonV1"
         android:text="="
         app:layout_constraintBottom_toTopOf="@+id/guideline205"
         app:layout_constraintEnd_toStartOf="@+id/guideline104"
         app:layout_constraintStart_toStartOf="@+id/guideline103"
-        app:layout_constraintTop_toTopOf="@+id/guideline204"
-        app:rippleColor="@android:color/white"/>
+        app:layout_constraintTop_toTopOf="@+id/guideline204"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
